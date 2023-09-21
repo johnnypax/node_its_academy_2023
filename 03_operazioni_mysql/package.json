@@ -1,0 +1,14 @@
+{
+  "name": "03_operazioni_mysql",
+  "version": "1.0.0",
+  "description": "Pacchetto con sorgenti di interazione MySQL",
+  "main": "01_inserimento.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}
