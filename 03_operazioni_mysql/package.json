@@ -1,8 +1,8 @@
 {
   "name": "03_operazioni_mysql",
   "version": "1.0.0",
-  "description": "Pacchetto con sorgenti di interazione MySQL",
-  "main": "01_inserimento.js",
+  "description": "Inizializzazione del progetto:\r `npm init`",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
