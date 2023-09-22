@@ -1,0 +1,31 @@
+<%- include("layouts/header") -%>
+<%- include("layouts/navbar") -%>
+
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Cognome</th>
+                <th>Matricola</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(let i=0; i<elenco.length; i++) { %>
+            <tr>
+                <td><%= elenco[i].nome %></td>
+                <td><%= elenco[i].cognome %></td>
+                <td>
+                    <a href="/dettaglio/<%= elenco[i]._id %>">
+                        <%= elenco[i].matricola %>
+                    </a>                    
+                </td>
+            </tr>
+            <% } %>
+        </tbody>
+    </table>
+</div>
+
+
+<%- include("layouts/footer") -%>
+
