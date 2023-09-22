@@ -1,0 +1,27 @@
+<%- include("layouts/header") -%>
+<%- include("layouts/navbar") -%>
+
+<div class="container">
+    <h1>Inserimento nuovo studente</h1>
+    <form action="/salva" method="post">
+            
+        <div class="mb-3">
+            <label for="inputNome" class="form-label">Nome</label>
+            <input type="text" name="var_nome" class="form-control" id="inputNome" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="inputCognome" class="form-label">Cognome</label>
+            <input type="text" name="var_cogn" class="form-control" id="inputCognome" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="inputMatricola" class="form-label">Matricola</label>
+            <input type="text" name="var_matr" class="form-control" id="inputMatricola" aria-describedby="emailHelp">
+        </div>
+        <button type="submit" class="btn btn-primary">Salva</button>
+        
+    </form>
+</div>
+
+
+<%- include("layouts/footer") -%>
+

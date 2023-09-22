@@ -1,0 +1,21 @@
+<%- include("layouts/header") -%>
+<%- include("layouts/navbar") -%>
+
+<div class="container">
+    <h1>Dettaglio matricola <%= studente.matricola %></h1>
+    <p>
+        Nome: <%= studente.nome %><br />
+        Cognome: <%= studente.cognome %><br />
+    </p>
+
+    <form action="/elimina/<%= studente._id %>" method="post">
+        <button type="submit" class="btn btn-danger">Elimina</button>
+    </form>
+    
+    <a href="/modifica/<%= studente._id %>" class="btn btn-warning">Modifica</a>
+</div>
+
+
+
+<%- include("layouts/footer") -%>
+
