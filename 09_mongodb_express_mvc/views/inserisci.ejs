@@ -1,0 +1,47 @@
+<%- include("layouts/header") -%>
+<%- include("layouts/navbar") -%>
+
+<div class="container">
+    <h1>Crea nuovo Annuncio</h1>
+    <form action="/salva" method="post">
+            
+        <div class="mb-3">
+            <label for="inputTitolo" class="form-label">Titolo</label>
+            <input type="text" name="var_tit" class="form-control" id="inputTitolo" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="inputData_inserimento" class="form-label">Data</label>
+            <input type="date" name="var_data" class="form-control" id="inputData" aria-describedby="emailHelp">
+        </div>
+        <!--<div class="mb-3">
+            <label class="form-label" for="inputData">Data</label>
+            <input type="date" id="inputData" name="dateStandard">
+        </div> -->
+        <div class="mb-3">
+            <label for="inputDescrizione" class="form-label">Descrizione</label>
+            <input type="text" name="var_desc" class="form-control" id="inputDescrizione" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="inputNome" class="form-label">Nome</label>
+            <input type="text" name="var_nome" class="form-control" id="inputNome" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="inputCognome" class="form-label">Cognome</label>
+            <input type="text" name="var_cogn" class="form-control" id="inputCognome" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="inputTelefono" class="form-label">Telefono</label>
+            <input type="text" name="var_tel" class="form-control" id="inputTelefono" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="inputEmail" class="form-label">E-mail</label>
+            <input type="text" name="var_email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Salva</button>
+        
+    </form>
+</div>
+
+
+<%- include("layouts/footer") -%>

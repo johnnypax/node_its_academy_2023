@@ -1,0 +1,27 @@
+<%- include("layouts/header") -%>
+<%- include("layouts/navbar") -%>
+
+<div class="container">
+    <h1>Dettaglio Annuncio </h1>
+    <h2><%= ticket.Titolo %></h2>
+    <p>
+        Data: <%= ticket.Data_inserimento %><br />
+        Descrizione: <%= ticket.Descrizione %><br />
+        Nome: <%= ticket.Nome %><br />
+        Cognome: <%= ticket.Cognome %><br />
+        Telefono: <%= ticket.Telefono %><br />
+        Email: <%= ticket.Email %> <br />
+    </p>
+
+    <form action="/elimina/<%= ticket._id %>" method="post">
+        
+        <div class="mb-3">
+            <label for="inputCodice" class="form-label">Codice eliminazione</label>
+            <input type="text" name="var_codice" class="form-control" id="inputCodice" aria-describedby="emailHelp">
+        </div>
+
+        <button type="submit" class="btn btn-danger">Elimina</button>
+    </form>
+</div>
+
+<%- include("layouts/footer") -%>
